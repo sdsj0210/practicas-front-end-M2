@@ -1,0 +1,79 @@
+body {
+  display: grid;
+}
+
+/* 
+La imagen tendrá un alto de 60 px. 
+*/
+
+.logo {
+  background-color: black;
+  height: 60px;
+}
+
+/* El texto tendrá un tamaño de 16 puntos, será de color #333FFF y estará en negrita. */
+
+.encabezado {
+  color: #333fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*
+El menú estará en horizontal con un ancho del 100%, color de fondo negro y letra blanca. 
+*/
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  background-color: black;
+  color: #fff;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.menu a {
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+/* Crearemos dos artículos con texto en su interior. */
+
+.contenido-principal {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  align-items: center;
+}
+
+.contenido-principal article p {
+  text-align: justify;
+  padding: 15px;
+}
+
+article h3 {
+  text-align: center;
+}
+
+/*
+Pie de Pagina
+Tendrá una disposición horizontal con fondo negro y letra blanca.
+
+*/
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  background-color: black;
+  color: #fff;
+}
+
+.footer-menu a {
+  text-align: justify;
+  padding: 10px;
+}
