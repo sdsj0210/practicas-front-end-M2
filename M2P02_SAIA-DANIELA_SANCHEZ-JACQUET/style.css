@@ -1,0 +1,20 @@
+body {
+  display: grid;
+}
+
+/*
+Pie de Pagina
+*/
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  background-color: black;
+  color: #fff;
+}
+
+.footer-menu a {
+  text-align: justify;
+  padding: 10px;
+}
