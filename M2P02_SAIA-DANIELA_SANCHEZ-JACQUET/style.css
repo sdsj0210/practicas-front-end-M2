@@ -2,19 +2,66 @@ body {
   display: grid;
 }
 
+/* Cambiar el estilo del encabezado (color, tipo de letra, alineamiento, etc). */
+.encabezado {
+  width: 100%;
+  color: chocolate;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Usar el selector de clase para darle a la sección un margen izquierdo del 8%, 
+un margen derecho del 5% y un margen top de 30 puntos. */
+.section-container {
+  width: 500px;
+  margin: 30pt 5% 0 8%;
+}
+
+/* 
+Uno tendrá la letra del tamaño 16 y
+tendrá el texto justificado
+Los dos artículos tendrán el texto de distinto color.
+*/
+
+#article-1 {
+  font-size: 16px;
+  text-align: justify;
+  color: burlywood;
+}
+
+/* 
+Otro de tamaño 12 
+estará en negrita y cursiva
+Los dos artículos tendrán el texto de distinto color.
+*/
+
+#article-2 {
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+  color: cadetblue;
+}
+
 /*
 Pie de Pagina
 */
-.footer-menu {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 
+/* Poner el menú centrado con la lista en línea. */
+
+.menu {
+  width: 100%;
   background-color: black;
   color: #fff;
+  text-align: center;
 }
 
-.footer-menu a {
-  text-align: justify;
-  padding: 10px;
+.menu a {
+  padding: 0 60px;
+}
+
+/* Usar el selector de pseudoclasesobre los enlaces para que el texto se vuelva naranja al poner el cursor encima. */
+
+a:hover {
+  cursor: pointer;
+  color: orange;
 }
