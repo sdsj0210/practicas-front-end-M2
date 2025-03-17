@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* Globales */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  padding: 2rem 6rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.encabezado {
+  text-align: center;
+  height: 12rem;
+}
+
+/*Navegacion Principal*/
+
+.nav-principal {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  /*   position: sticky;
+  top: 10; */
+}
+
+.nav-principal a:hover {
+  cursor: pointer;
+  color: #d98324;
+}
+
+.nuestra-historia {
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #d98324 50%,
+      #d98324 100%
+    ),
+    url(https://cocinarica.com.py/img/cocina-paraguaya/folclore-que-es-secundaria.jpg);
+  background-position: left center;
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-size: 100%, 100rem;
+  margin-bottom: 1.5rem;
+}
+
+.nuestra-historia-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nuestra-historia-texto {
+  flex-basis: 50%;
+  padding-left: 5rem;
+  color: #000;
+}
+
+/*Contenido Principal*/
+
+.footer-menu {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.footer-menu a:hover {
+  cursor: pointer;
+  color: #d98324;
+}
+
+/* Pie de Pagina */
