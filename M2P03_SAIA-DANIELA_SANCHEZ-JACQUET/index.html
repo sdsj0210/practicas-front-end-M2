@@ -12,19 +12,45 @@
 
   <body>
     <header>
-      <h1 class="encabezado container">Desde Paraguay hasta ti</h1>
-      <div class="nav-principal">
-        <nav>
-          <a href="inicio.html">Inicio</a>
-          <a href="menu.html">Menú</a>
-          <a href="reservacion.html">Reservación</a>
-          <a href="eventos.html">Eventos</a>
-          <a href="contacto.html">Contacto</a>
-        </nav>
+      <div class="encabezado-container">
+        <h1 class="encabezado">Desde Paraguay hasta ti</h1>
+        <div class="logos-container">
+          <img src="imgs/insta-logo.png" alt="Logo Instagram" />
+          <img src="imgs/fb-logo.png" alt="Logo Facebook" />
+        </div>
       </div>
     </header>
 
-    <main class="nuestra-historia">
+    <div class="nav-principal">
+      <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="reservacion.html">Reservación</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+
+    <main class="quienes-somos">
+      <div class="quienes-somos-container">
+        <div class="quienes-somos-img">
+          <div class="texto-quienes-somos">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit molestias officiis rerum maiores facere mollitia
+              iste adipisci illum, ratione quibusdam nesciunt! Accusamus
+              deserunt laborum inventore nostrum cumque at aliquid nam! Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+              molestias officiis rerum maiores facere mollitia iste adipisci
+              illum, ratione quibusdam nesciunt! Accusamus deserunt laborum
+              inventore nostrum cumque at aliquid nam!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="nuestra-historia">
       <div class="nuestra-historia-flex">
         <div class="nuestra-historia-texto">
           <h2>Nuestra Historia</h2>
@@ -32,27 +58,76 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
             perferendis repudiandae odit excepturi beatae, a voluptates,
             expedita dolorem quaerat corporis adipisci quam quis ullam. Facere
-            iste eius aut repellat eaque.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            perferendis repudiandae odit excepturi beatae, a voluptates,
-            expedita dolorem quaerat corporis adipisci quam quis ullam. Facere
-            iste eius aut repellat eaque.
+            iste eius aut repellat eaque. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Eius perferendis repudiandae odit excepturi
+            beatae, a voluptates, expedita dolorem quaerat corporis adipisci
+            quam quis ullam. Facere iste eius aut repellat eaque.
           </p>
         </div>
       </div>
-    </main>
+    </section>
 
-    <section class="eventos">
-      <div class="eventos-box">
-        <div class="evento-1">
-          <img src="evento-1" alt="Evento 1" />
-          <h4>San Patricio</h4>
-          <a href="" target="_blank"></a>
+    <section class="eventos container">
+      <h2>Nuestros Eventos</h2>
+      <div class="nuestros-eventos">
+        <div class="eventos-box">
+          <div class="evento">
+            <img
+              src="https://www.riu.com/blog/wp-content/uploads/2021/03/st-patrics-day-riu-scaled.jpg"
+              alt="Evento 1"
+            />
+            <h4>San Patricio</h4>
+            <a></a>
+          </div>
+
+          <div class="evento">
+            <img
+              src="https://img.freepik.com/foto-gratis/gente-vida-nocturna-divirtiendose-bares-discotecas_23-2149088578.jpg"
+              alt="Evento 2"
+            />
+            <h4>Miercoles de Chicas</h4>
+          </div>
+
+          <div class="evento">
+            <img
+              src="https://www.dondeir.com/wp-content/uploads/2019/07/tanqueray-cocteles-ginebra-esteban-tamayo-tanqueray-flor-de-sevilla.jpg"
+              alt="Evento 3"
+            />
+            <h4>Primavera</h4>
+          </div>
         </div>
+
+        <aside class="eventos-formulario">
+          <form class="form-datos">
+            <fieldset>
+              <h5>
+                Ingresa tus datos para recibir mas informacion sobre nuestros
+                eventos!
+              </h5>
+              <div class="campo">
+                <label for="name">Nombre: </label>
+                <input id="name" type="text" />
+              </div>
+
+              <div class="campo">
+                <label for="lastname">Apellido: </label>
+                <input id="lastname" type="text" />
+              </div>
+
+              <div class="campo">
+                <label for="telf">Telefono: </label>
+                <input id="telf" type="tel" />
+              </div>
+              <div class="campo">
+                <label for="mail">Correo: </label>
+                <input id="mail" type="email" />
+              </div>
+
+              <button class="btn-eventos" type="submit">Enviar Datos</button>
+            </fieldset>
+          </form>
+        </aside>
       </div>
-      <aside class=""></aside>
     </section>
 
     <footer>

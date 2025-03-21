@@ -10,7 +10,8 @@ html {
 }
 
 body {
-  font-family: "Raleway", serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1.6rem;
   line-height: 2;
 }
@@ -19,7 +20,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -41,19 +43,63 @@ a {
   font-size: 2rem;
 }
 
-.container {
-  max-width: 120rem;
-  margin: 0 auto 0 auto;
-}
-
 img {
   max-width: 100%;
   display: block;
 }
 
+.container {
+  max-width: 120rem;
+  margin: 0 auto 0 auto;
+}
+
+.encabezado-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+
+.logos-container {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
 .encabezado {
+  width: 100%;
   text-align: center;
-  height: 12rem;
+}
+
+/*Quienes somos*/
+
+.quienes-somos {
+  margin-bottom: 10rem;
+}
+
+.quienes-somos-img {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(https://elmundoinmobiliario.com.ar/wp-content/uploads/bar-vintage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 60rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-quienes-somos {
+  width: 80rem;
+  padding: 0.5rem;
+  text-align: justify;
+  font-size: large;
+  font-weight: 800;
 }
 
 /*Navegacion Principal*/
@@ -72,6 +118,8 @@ img {
   cursor: pointer;
   color: #d98324;
 }
+
+/*Nuestra Historia*/
 
 .nuestra-historia {
   background-image: linear-gradient(
@@ -99,7 +147,84 @@ img {
   color: #000;
 }
 
-/*Contenido Principal*/
+/*Eventos*/
+.eventos {
+  padding-top: 5rem;
+}
+
+.eventos h2 {
+  text-align: center;
+}
+
+.eventos h4 {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.eventos-box {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.nuestros-eventos {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.eventos-box img {
+  width: 40rem;
+  height: 25rem;
+}
+
+.eventos-formulario {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.eventos-formulario legend {
+  background-color: #d98324;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.form-datos h5 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.campo label {
+  flex-basis: 10rem;
+}
+
+.btn-eventos {
+  border: none;
+  background-color: #efdcab;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-align: center;
+}
+
+.btn-eventos:hover {
+  cursor: pointer;
+}
+
+/* Pie de Pagina */
 
 .footer-menu {
   width: 100%;
@@ -113,5 +238,3 @@ img {
   cursor: pointer;
   color: #d98324;
 }
-
-/* Pie de Pagina */
